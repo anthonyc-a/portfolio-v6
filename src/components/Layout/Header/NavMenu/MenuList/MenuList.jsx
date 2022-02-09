@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const navLinks = {
   show: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
       delayChildren: 0.1,
     },
   },

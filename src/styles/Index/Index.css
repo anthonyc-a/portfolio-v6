@@ -1,0 +1,64 @@
+@import url(/Users/anthonyanimba/Documents/projects/portfolio/personal/portfolio-v6/src/styles/Layout/Layout.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-selection {
+  background-color: transparent;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+html {
+  height: 100%;
+  font-family: "Manrope", Helvetica, Arial, Sans-Serif;
+}
+
+body {
+  background-color: #ddd;
+  color: #1c1c1c;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  z-index: 10000;
+}
+
+.logo svg {
+  height: 22px;
+}
+
+.logo svg g path {
+  fill: #1c1c1c;
+}
+/*# sourceMappingURL=Index.css.map */

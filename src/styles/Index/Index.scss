@@ -1,0 +1,63 @@
+@import "../Layout/Layout.css";
+
+$black: #1c1c1c;
+$grey: #646464;
+$white: #fff;
+$offwhite: #ddd;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-selection {
+  background-color: transparent;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+html {
+  height: 100%;
+  font-family: "Manrope", Helvetica, Arial, Sans-Serif;
+}
+
+body {
+  background-color: #ddd;
+  color: #1c1c1c;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  z-index: 10000;
+
+  svg {
+    height: 22px;
+    g {
+      path {
+        fill: #1c1c1c;
+      }
+    }
+  }
+}

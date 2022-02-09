@@ -2,6 +2,10 @@
   margin-bottom: 40px;
 }
 
+.title-contain .title {
+  overflow: hidden;
+}
+
 .title-contain span {
   display: block;
   margin-top: 8px;

@@ -6,12 +6,10 @@
   width: calc(100% + 32px);
   -webkit-transform: translateX(-16px);
           transform: translateX(-16px);
-  background-color: red;
 }
 
 .projects .project-img-contain .project-img-inner {
   width: 100%;
-  background-color: green;
 }
 
 .projects .project-img-contain .project-img-inner img {

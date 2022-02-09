@@ -194,7 +194,7 @@
 .title-contain span {
   display: block;
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 13px;
   opacity: 0.5;
 }
 
@@ -231,6 +231,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -238,15 +241,44 @@
 }
 
 .projects .project-content .content-upper .nav-arrows {
-  width: 80px;
-  height: 24px;
-  background-color: purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 72px;
+}
+
+.projects .project-content .content-upper .nav-arrows .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .project-content .content-upper .nav-arrows .arrow:nth-child(1) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 0.5;
+}
+
+.projects .project-content .content-upper .nav-arrows .arrow svg {
+  height: 16px;
+}
+
+.projects .project-content .content-upper .nav-arrows .arrow svg g path {
+  stroke: #1c1c1c;
+  stroke-width: 1.5px;
 }
 
 .projects .project-content .project-type {
   width: 100%;
   margin-top: 16px;
   font-size: 13px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   opacity: 0.5;
 }
@@ -259,12 +291,28 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 96px;
 }
 
 .projects .project-content .content-lower a {
-  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
   font-weight: 500;
+}
+
+.projects .project-content .content-lower a:nth-child(1) svg {
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+}
+
+.projects .project-content .content-lower a:nth-child(1) svg path {
+  stroke: #1c1c1c;
 }
 
 .projects .project-content .content-lower a:nth-last-child(1) {

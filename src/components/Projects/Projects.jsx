@@ -1,5 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
+import NavArrow from "./NavArrows/NavArrows"
+import LinkArrow from "../Sections/Arrows/LinkArrow/LinkArrow"
 
 const Projects = () => {
   return (
@@ -8,12 +10,14 @@ const Projects = () => {
       <div className="project-content">
         <div className="content-upper">
           <h3>archvizual.com</h3>
-          <div className="nav-arrows"></div>
+          <NavArrow />
         </div>
         <div className="project-type">design + code</div>
         <div className="content-lower">
-            <a href="/">Visit site</a>
-            <Link to="/projects">All projects</Link>
+          <a href="/">
+            Visit site <LinkArrow />
+          </a>
+          <Link to="/projects">All projects</Link>
         </div>
       </div>
     </div>

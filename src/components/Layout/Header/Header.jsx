@@ -1,7 +1,9 @@
 import React from "react"
 import Burger from "./Burger/Burger"
 import Logo from "./Logo/Logo"
+import Nav from "./Nav/Nav"
 import NavMenu from "./NavMenu/NavMenu"
+import Time from "./Time/Time"
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -10,6 +12,8 @@ const Header = ({ menuOpen, setMenuOpen }) => {
         <Logo />
         <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <NavMenu menuOpen={menuOpen} />
+        <Time />
+        <Nav />
       </nav>
     </div>
   )

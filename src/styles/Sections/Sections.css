@@ -1,0 +1,23 @@
+.title-contain {
+  margin-bottom: 40px;
+}
+
+.title-contain span {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 640px) {
+  .title-contain span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-contain span {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=Sections.css.map */

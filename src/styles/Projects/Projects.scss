@@ -1,0 +1,50 @@
+.projects {
+  width: 100%;
+
+  .project-img-contain {
+    width: calc(100% + 32px);
+    height: 200px;
+    transform: translateX(-16px);
+    background-color: red;
+  }
+
+  .project-content {
+    width: 100%;
+    margin-top: 40px;
+
+    .content-upper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .nav-arrows {
+        width: 80px;
+        height: 24px;
+        background-color: purple;
+      }
+    }
+
+    .project-type {
+      width: 100%;
+      margin-top: 16px;
+      font-size: 13px;
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
+
+    .content-lower {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 80px;
+
+      a {
+          font-size: 14px;
+          font-weight: 500;
+        &:nth-last-child(1) {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

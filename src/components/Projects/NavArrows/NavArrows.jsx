@@ -1,5 +1,5 @@
 import React from "react"
-import SideArrow from "./sideArrow"
+import SideArrow from "./SideArrow"
 
 const NavArrows = () => {
   return (

@@ -16,13 +16,17 @@
 
   .project-content {
     width: 100%;
-    margin-top: 56px;
+    margin-top: 48px;
 
     .content-upper {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
+
+      h3 {
+          text-transform: uppercase;
+      }
 
       .nav-arrows {
         display: flex;

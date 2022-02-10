@@ -18,7 +18,7 @@
 
 .projects .project-content {
   width: 100%;
-  margin-top: 56px;
+  margin-top: 48px;
 }
 
 .projects .project-content .content-upper {
@@ -32,6 +32,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+.projects .project-content .content-upper h3 {
+  text-transform: uppercase;
 }
 
 .projects .project-content .content-upper .nav-arrows {

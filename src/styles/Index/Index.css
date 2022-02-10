@@ -294,7 +294,6 @@
           align-items: center;
   margin-top: 40px;
   font-size: 17px;
-  font-weight: 500;
   color: #8d8d8d;
 }
 
@@ -580,7 +579,7 @@ ul {
 }
 
 .logo svg {
-  height: 22px;
+  height: 20px;
 }
 
 .logo svg g path {

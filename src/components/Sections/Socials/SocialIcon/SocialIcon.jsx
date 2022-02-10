@@ -8,7 +8,6 @@ const SocialIcon = ({ img, link, animation }) => {
       target="_blank"
       rel="noreferrer"
       className="social-icon"
-      animate={animation}
     >
       <img src={img} alt="Social Icon" />
     </motion.a>

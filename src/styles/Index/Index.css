@@ -357,6 +357,8 @@
 html {
   height: 100%;
   font-family: "Manrope", Helvetica, Arial, Sans-Serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {

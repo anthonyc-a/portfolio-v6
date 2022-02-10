@@ -312,7 +312,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -320,8 +320,8 @@
   width: 11px;
   height: 11px;
   margin-left: 6px;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
   opacity: 0.5;
 }
 
@@ -355,13 +355,13 @@
 }
 
 html {
-  height: 100%;
   font-family: "Manrope", Helvetica, Arial, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+  height: 100%;
   background-color: #ddd;
   color: #1c1c1c;
 }

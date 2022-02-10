@@ -1,5 +1,7 @@
-import React from 'react';
-import SocialIcon from './SocialIcon/SocialIcon';
+import React from "react"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import SocialIcon from "./SocialIcon/SocialIcon"
 import insta from "../../../../static/svg/instagram.svg"
 import github from "../../../../static/svg/github.svg"
 import linkedin from "../../../../static/svg/linkedin.svg"
@@ -9,11 +11,38 @@ const githubLink = "https://github.com/anthonyc-a"
 const linkedLink = "https://www.linkedin.com/in/anthony-animba/"
 
 const SocialIcons = () => {
-  return <div className='social-icons'>
-      <SocialIcon img={insta} link={instaLink} />
-      <SocialIcon img={github} link={githubLink} />
-      <SocialIcon img={linkedin} link={linkedLink} />
-  </div>;
-};
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  })
 
-export default SocialIcons;
+  const animation = useAnimation()
+
+  React.useEffect(() => {
+    if (inView) {
+      animation.start({
+        y: 0,
+        transition: {
+          ease: [0.51, 0.92, 0.24, 1],
+          duration: 0.4,
+        },
+      })
+    }
+
+    if (!inView) {
+      animation.start({
+        y: "101%",
+      })
+    }
+  }, [inView])
+
+  return (
+    <motion.div className="social-icons" ref={ref}>
+      <SocialIcon img={insta} link={instaLink} animation={animation} />
+      <SocialIcon img={github} link={githubLink} animation={animation} />
+      <SocialIcon img={linkedin} link={linkedLink} animation={animation} />
+    </motion.div>
+  )
+}
+
+export default SocialIcons

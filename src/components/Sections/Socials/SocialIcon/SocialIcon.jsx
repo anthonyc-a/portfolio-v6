@@ -1,10 +1,17 @@
 import React from "react"
+import { motion } from "framer-motion"
 
-const SocialIcon = ({img, link}) => {
+const SocialIcon = ({ img, link, animation }) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer" className="social-icon">
+    <motion.a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className="social-icon"
+      animate={animation}
+    >
       <img src={img} alt="Social Icon" />
-    </a>
+    </motion.a>
   )
 }
 

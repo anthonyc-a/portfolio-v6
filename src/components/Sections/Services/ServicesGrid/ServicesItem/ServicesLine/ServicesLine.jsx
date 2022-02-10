@@ -17,7 +17,7 @@ const ServicesLine = () => {
         transition: {
           ease: [0.51, 0.92, 0.24, 1],
           duration: 1,
-          delay: 0.6
+          delay: 0.8
         },
       })
     }

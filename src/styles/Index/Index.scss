@@ -2,7 +2,7 @@
 @import "../Sections/Sections.scss";
 @import "../Projects/Projects.scss";
 
-$black: #1c1c1c;
+$black: #000;
 $grey: #646464;
 $white: #fff;
 $offwhite: #ddd;
@@ -36,7 +36,7 @@ html {
 body {
   height: 100%;
   background-color: #E3E1E0;
-  color: #1c1c1c;
+  color: #000;
 }
 
 main {
@@ -109,7 +109,7 @@ ul {
     height: 22px;
     g {
       path {
-        fill: #1c1c1c;
+        fill: #000;
       }
     }
   }

@@ -35,33 +35,42 @@ html {
 
 body {
   height: 100%;
-  background-color: #ddd;
+  background-color: #E3E1E0;
   color: #1c1c1c;
 }
 
 main {
-  padding: 96px 16px 40px 16px;
+  padding: 160px 16px 40px 16px;
 
   @media screen and (min-width: 640px) {
-    padding: 96px 40px 40px 40px;
+    padding: 160px 40px 40px 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 96px 80px 80px 80px;
+    padding: 160px 80px 80px 80px;
   }
 
   @media screen and (min-width: 1600px) {
-    padding: 96px 120px 40px 120px;
+    padding: 160px 120px 40px 120px;
   }
 }
 
 section {
-  padding-top: 72px;
+  margin-top: 128px;
+
+  &:nth-child(1) {
+      margin-top: unset;
+  }
 }
 
 a {
   color: unset;
   text-decoration: unset;
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
 }
 
 h2 {

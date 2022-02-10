@@ -7,7 +7,7 @@
 
   .description {
     overflow: hidden;
-    
+
     span {
       display: block;
       margin-top: 8px;
@@ -24,3 +24,26 @@
     }
   }
 }
+
+.social-icons {
+    display: flex;
+    margin-top: 40px;
+  
+    .social-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      margin-right: 16px;
+      border-radius: 100%;
+      border: 1px solid #1c1c1c4b;
+      transition: .4s ease-in-out;
+  
+      img {
+        width: 13px;
+        height: 13px;
+        border-radius: 0 !important;
+      }
+    }
+  }

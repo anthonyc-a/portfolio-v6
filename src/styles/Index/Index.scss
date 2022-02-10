@@ -40,23 +40,23 @@ body {
 }
 
 main {
-  padding: 160px 16px 40px 16px;
+  padding: 160px 16px 104px 16px;
 
   @media screen and (min-width: 640px) {
-    padding: 160px 40px 40px 40px;
+    padding: 160px 40px 104px 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 160px 80px 80px 80px;
+    padding: 160px 80px 104px 80px;
   }
 
   @media screen and (min-width: 1600px) {
-    padding: 160px 120px 40px 120px;
+    padding: 160px 120px 104px 120px;
   }
 }
 
 section {
-  margin-top: 120px;
+  margin-top: 104px;
 
   &:nth-child(1) {
       margin-top: unset;

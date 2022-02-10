@@ -190,4 +190,35 @@
 .header .header-inner .nav li:nth-last-child(1) {
   margin-right: unset;
 }
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 40px 16px;
+  background-color: #d7d7d7;
+}
+
+.footer .footer-socials {
+  margin-top: 32px;
+}
+
+.footer .footer-socials a {
+  margin-right: 24px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer .footer-description {
+  margin-top: 40px;
+  opacity: 0.5;
+}
+
+.footer .footer-description p {
+  width: 85%;
+}
+
+.footer .footer-copyright {
+  margin-top: 40px;
+  opacity: 0.5;
+}
 /*# sourceMappingURL=Layout.css.map */

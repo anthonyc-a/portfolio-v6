@@ -5,18 +5,22 @@
     overflow: hidden;
   }
 
-  span {
-    display: block;
-    margin-top: 8px;
-    font-size: 13px;
-    opacity: 0.5;
+  .description {
+    overflow: hidden;
+    
+    span {
+      display: block;
+      margin-top: 8px;
+      font-size: 13px;
+      opacity: 0.5;
 
-    @media screen and (min-width: 640px) {
-      font-size: 14px;
-    }
+      @media screen and (min-width: 640px) {
+        font-size: 14px;
+      }
 
-    @media screen and (min-width: 1280px) {
-      font-size: 16px;
+      @media screen and (min-width: 1280px) {
+        font-size: 16px;
+      }
     }
   }
 }

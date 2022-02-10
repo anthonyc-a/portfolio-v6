@@ -196,7 +196,11 @@
   overflow: hidden;
 }
 
-.title-contain span {
+.title-contain .description {
+  overflow: hidden;
+}
+
+.title-contain .description span {
   display: block;
   margin-top: 8px;
   font-size: 13px;
@@ -204,13 +208,13 @@
 }
 
 @media screen and (min-width: 640px) {
-  .title-contain span {
+  .title-contain .description span {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .title-contain span {
+  .title-contain .description span {
     font-size: 16px;
   }
 }

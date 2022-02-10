@@ -51,13 +51,38 @@
   margin-right: 16px;
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .social-icons .social-icon img {
   width: 14px;
   height: 14px;
   border-radius: 0 !important;
+}
+
+.email-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.email-btn:nth-child(1) svg {
+  width: 11px;
+  height: 11px;
+  margin-left: 6px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.email-btn:nth-child(1) svg path {
+  stroke: #000;
 }
 /*# sourceMappingURL=Sections.css.map */

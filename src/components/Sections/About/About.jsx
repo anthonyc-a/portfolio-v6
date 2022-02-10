@@ -1,4 +1,5 @@
 import React from "react"
+import EmailBtn from "../EmailBtn/EmailBtn"
 import SocialIcons from "../Socials/SocialIcons"
 import Description from "../Title/Description"
 import Title from "../Title/Title"
@@ -26,8 +27,11 @@ const About = () => {
             on clean design and robust code to improve visitor conversion and
             customer retention.
           </p>
+          <SocialIcons />
         </div>
-        <SocialIcons />
+        <div className="about-contact">
+          <EmailBtn />
+        </div>
       </div>
     </section>
   )

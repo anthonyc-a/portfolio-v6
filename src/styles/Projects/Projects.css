@@ -64,7 +64,7 @@
 }
 
 .projects .project-content .content-upper .nav-arrows .arrow svg g path {
-  stroke: #1c1c1c;
+  stroke: #000;
   stroke-width: 1.5px;
 }
 
@@ -109,7 +109,7 @@
 }
 
 .projects .project-content .content-lower a:nth-child(1) svg path {
-  stroke: #1c1c1c;
+  stroke: #000;
 }
 
 .projects .project-content .content-lower a:nth-last-child(1) {

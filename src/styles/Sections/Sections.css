@@ -83,6 +83,7 @@
 
 .email-btn:nth-child(1) svg path {
   stroke: #8d8d8d;
+  stroke-width: 0.8px;
 }
 
 .services .services-inner {

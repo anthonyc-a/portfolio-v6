@@ -68,7 +68,7 @@
 }
 
 .projects .project-content .content-upper .nav-arrows .arrow svg {
-  height: 16px;
+  height: 17px;
 }
 
 .projects .project-content .content-upper .nav-arrows .arrow svg g path {
@@ -104,7 +104,6 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 17px;
-  font-weight: 500;
 }
 
 .projects .project-content .content-lower a:nth-child(1) svg {
@@ -117,6 +116,7 @@
 
 .projects .project-content .content-lower a:nth-child(1) svg path {
   stroke: #8d8d8d;
+  stroke-width: 0.8px;
 }
 
 .projects .project-content .content-lower a:nth-last-child(1) {

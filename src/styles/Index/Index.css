@@ -145,6 +145,7 @@
 .header .header-inner .nav-menu .menu-copyright {
   position: absolute;
   bottom: 32px;
+  font-size: 14px;
   opacity: 0.5;
 }
 
@@ -194,7 +195,7 @@
 .footer {
   position: relative;
   width: 100%;
-  padding: 40px 16px;
+  padding: 32px 16px 32px 16px;
   background-color: #d7d7d7;
 }
 
@@ -307,6 +308,7 @@
 
 .email-btn:nth-child(1) svg path {
   stroke: #8d8d8d;
+  stroke-width: 0.8px;
 }
 
 .services .services-inner {
@@ -408,7 +410,7 @@
 }
 
 .projects .project-content .content-upper .nav-arrows .arrow svg {
-  height: 16px;
+  height: 17px;
 }
 
 .projects .project-content .content-upper .nav-arrows .arrow svg g path {
@@ -444,7 +446,6 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 17px;
-  font-weight: 500;
 }
 
 .projects .project-content .content-lower a:nth-child(1) svg {
@@ -457,6 +458,7 @@
 
 .projects .project-content .content-lower a:nth-child(1) svg path {
   stroke: #8d8d8d;
+  stroke-width: 0.8px;
 }
 
 .projects .project-content .content-lower a:nth-last-child(1) {
@@ -555,7 +557,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 500;
 }
 

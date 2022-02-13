@@ -877,7 +877,7 @@
 }
 
 .projects .project-img-contain .project-img-inner img {
-  width: 100%;
+  width: calc(100% / 3);
 }
 
 .projects .project-content {

@@ -156,15 +156,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 32px;
+  bottom: 24px;
   right: 16px;
 }
 
 .header .header-inner .time {
   position: absolute;
   margin-left: 64px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   z-index: 100000;
@@ -177,7 +177,7 @@
   }
 }
 
-@media screen and (min-width: 160px) {
+@media screen and (min-width: 1600px) {
   .header .header-inner .time {
     font-size: 18px;
   }

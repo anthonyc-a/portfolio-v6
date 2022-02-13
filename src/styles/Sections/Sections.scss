@@ -274,8 +274,12 @@
     }
 
     .services-aside {
-      width: 200px;
-      margin-left: auto;
+      width: 100%;
+
+      @media screen and (min-width: 760px) {
+        width: 200px;
+        margin-left: auto;
+      }
 
       .pricing-btn {
         position: sticky;

@@ -12,9 +12,10 @@ const About = () => {
         <Description description="A bit about me" />
       </div>
       <div className="about">
+        <h3 className="about-intro">HELLO</h3>
         <div className="about-inner">
           <p>
-            I’m a freelance web designer and developer with 5+ years experience
+            I’m a freelance designer and web developer with 5+ years experience
             in HTML5, CSS3 and Javascript ES5+.
             <br />
             <br />

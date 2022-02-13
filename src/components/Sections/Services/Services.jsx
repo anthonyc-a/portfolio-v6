@@ -13,6 +13,11 @@ const Services = () => {
       <div className="services">
         <div className="services-inner">
           <ServicesGrid />
+          <div className="services-aside">
+            <a href="/" className="pricing-btn">
+              price calculator
+            </a>
+          </div>
         </div>
       </div>
     </section>

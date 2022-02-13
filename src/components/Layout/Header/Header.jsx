@@ -3,6 +3,7 @@ import Burger from "./Burger/Burger"
 import Logo from "./Logo/Logo"
 import Nav from "./Nav/Nav"
 import NavMenu from "./NavMenu/NavMenu"
+import ThemeSwitch from "./ThemeSwitch/ThemeSwitch"
 import Time from "./Time/Time"
 
 const Header = ({ menuOpen, setMenuOpen }) => {
@@ -14,6 +15,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
         <NavMenu menuOpen={menuOpen} />
         <Time />
         <Nav />
+        <ThemeSwitch />
       </nav>
     </div>
   )

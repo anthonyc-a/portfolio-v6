@@ -1,8 +1,8 @@
 <svg width="41" height="28" viewBox="0 0 41 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_4_856)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.439392 3.81826H39.9848V27.5758H0.439392V3.81826ZM0.439392 0.424316H39.9848V3.81826H0.439392V0.424316Z" stroke="#1C1C1C" stroke-opacity="0.5"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5303 8.90918H33.8333V16.5455H21.5303V8.90918Z" stroke="#1C1C1C" stroke-opacity="0.5"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.59088 8.90918H18.0151V22.4849H6.59088V8.90918Z" stroke="#1C1C1C" stroke-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.439392 3.81826H39.9848V27.5758H0.439392V3.81826ZM0.439392 0.424316H39.9848V3.81826H0.439392V0.424316Z" stroke="#000"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5303 8.90918H33.8333V16.5455H21.5303V8.90918Z" stroke="#000"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.59088 8.90918H18.0151V22.4849H6.59088V8.90918Z" stroke="#000"/>
 </g>
 <defs>
 <clipPath id="clip0_4_856">

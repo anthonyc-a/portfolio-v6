@@ -2,14 +2,51 @@
   width: 100%;
 }
 
+@media screen and (min-width: 760px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .projects .project-img-contain {
   width: calc(100% + 32px);
+  height: 100%;
   -webkit-transform: translateX(-16px);
           transform: translateX(-16px);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 760px) {
+  .projects .project-img-contain {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects .project-img-contain {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects .project-img-contain {
+    width: calc(100% - 240px);
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+  }
 }
 
 .projects .project-img-contain .project-img-inner {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300%;
+  -webkit-transition: 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 .projects .project-img-contain .project-img-inner img {
@@ -17,11 +54,25 @@
 }
 
 .projects .project-content {
+  position: relative;
   width: 100%;
   margin-top: 48px;
 }
 
-.projects .project-content .content-upper {
+@media screen and (min-width: 760px) {
+  .projects .project-content {
+    margin-top: unset;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects .project-content {
+    margin-left: unset;
+  }
+}
+
+.projects .project-content .content-upper .upper-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,11 +85,57 @@
   width: 100%;
 }
 
-.projects .project-content .content-upper h3 {
-  text-transform: uppercase;
+@media screen and (min-width: 760px) {
+  .projects .project-content .content-upper .upper-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
 }
 
-.projects .project-content .content-upper .nav-arrows {
+.projects .project-content .content-upper .upper-inner .project-title-contain {
+  overflow: hidden;
+}
+
+.projects .project-content .content-upper .upper-inner h3 {
+  text-transform: uppercase;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+          animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+}
+
+@-webkit-keyframes title-anim {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes title-anim {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.projects .project-content .content-upper .upper-inner .nav-arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +145,25 @@
   width: 72px;
 }
 
-.projects .project-content .content-upper .nav-arrows .arrow {
+@media screen and (min-width: 760px) {
+  .projects .project-content .content-upper .upper-inner .nav-arrows {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects .project-content .content-upper .upper-inner .nav-arrows {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects .project-content .content-upper .upper-inner .nav-arrows {
+    margin-bottom: 56px;
+  }
+}
+
+.projects .project-content .content-upper .upper-inner .nav-arrows .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,35 +172,84 @@
           align-items: center;
 }
 
-.projects .project-content .content-upper .nav-arrows .arrow:nth-child(1) {
+.projects .project-content .content-upper .upper-inner .nav-arrows .arrow:nth-child(1) {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  opacity: 0.5;
 }
 
-.projects .project-content .content-upper .nav-arrows .arrow:nth-child(1) svg g path {
-  stroke: #8d8d8d;
-}
-
-.projects .project-content .content-upper .nav-arrows .arrow svg {
+.projects .project-content .content-upper .upper-inner .nav-arrows .arrow svg {
   height: 17px;
 }
 
-.projects .project-content .content-upper .nav-arrows .arrow svg g path {
-  stroke: #000;
+@media screen and (min-width: 760px) {
+  .projects .project-content .content-upper .upper-inner .nav-arrows .arrow svg {
+    height: 18px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects .project-content .content-upper .upper-inner .nav-arrows .arrow svg {
+    height: 20px;
+  }
+}
+
+.projects .project-content .content-upper .upper-inner .nav-arrows .arrow svg g path {
+  stroke: var(--font-colour);
   stroke-width: 1.5px;
+}
+
+.projects .project-content .content-upper .upper-inner .nav-arrows .inactive {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.projects .project-content .content-upper .upper-inner .nav-arrows .inactive svg g path {
+  stroke: #8d8d8d;
 }
 
 .projects .project-content .project-type {
   width: 100%;
   margin-top: 24px;
   font-size: 13px;
-  letter-spacing: 0.5px;
+  font-weight: 500;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  opacity: 0.5;
+  color: var(--accent-colour);
+}
+
+@media screen and (min-width: 760px) {
+  .projects .project-content .project-type {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects .project-content .project-type {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects .project-content .project-type {
+    margin-top: 32px;
+    font-size: 16px;
+  }
 }
 
 .projects .project-content .content-lower {
+  width: 100%;
+  margin-top: 96px;
+}
+
+@media screen and (min-width: 760px) {
+  .projects .project-content .content-lower {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.projects .project-content .content-lower .lower-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,10 +257,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-top: 96px;
 }
 
-.projects .project-content .content-lower a {
+.projects .project-content .content-lower .lower-inner a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,9 +267,22 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 17px;
+  font-weight: 500;
 }
 
-.projects .project-content .content-lower a:nth-child(1) svg {
+@media screen and (min-width: 1280px) {
+  .projects .project-content .content-lower .lower-inner a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects .project-content .content-lower .lower-inner a {
+    font-size: 20px;
+  }
+}
+
+.projects .project-content .content-lower .lower-inner a:nth-child(1) svg {
   width: 12px;
   height: 12px;
   margin-left: 6px;
@@ -114,12 +290,50 @@
           transform: translateY(2px);
 }
 
-.projects .project-content .content-lower a:nth-child(1) svg path {
+@media screen and (min-width: 1280px) {
+  .projects .project-content .content-lower .lower-inner a:nth-child(1) svg {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects .project-content .content-lower .lower-inner a:nth-child(1) svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.projects .project-content .content-lower .lower-inner a:nth-child(1) svg path {
   stroke: #8d8d8d;
   stroke-width: 0.8px;
 }
 
-.projects .project-content .content-lower a:nth-last-child(1) {
+@media screen and (min-width: 760px) {
+  .projects .project-content .content-lower .lower-inner a:nth-child(1) svg path {
+    stroke-width: 1px;
+  }
+}
+
+.projects .project-content .content-lower .lower-inner a:nth-last-child(1) {
   color: #8d8d8d;
+}
+
+.projects .project-content .content-lower .lower-inner span {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--accent-colour);
+}
+
+@media screen and (min-width: 1280px) {
+  .projects .project-content .content-lower .lower-inner span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects .project-content .content-lower .lower-inner span {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=Projects.css.map */

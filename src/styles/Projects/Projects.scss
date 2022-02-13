@@ -1,12 +1,33 @@
 .projects {
   width: 100%;
 
+  @media screen and (min-width: 760px) {
+    display: flex;
+  }
+
   .project-img-contain {
     width: calc(100% + 32px);
+    height: 100%;
     transform: translateX(-16px);
+    overflow: hidden;
+
+    @media screen and (min-width: 760px) {
+      transform: translateX(-40px);
+    }
+
+    @media screen and (min-width: 1280px) {
+      transform: translateX(-80px);
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: calc(100% - 240px);
+      transform: translateX(-120px);
+    }
 
     .project-img-inner {
-      width: 100%;
+      display: flex;
+      width: 300%;
+      transition: 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
 
       img {
         width: 100%;
@@ -15,47 +36,110 @@
   }
 
   .project-content {
+    position: relative;
     width: 100%;
     margin-top: 48px;
 
+    @media screen and (min-width: 760px) {
+      margin-top: unset;
+      margin-left: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: unset;
+    }
+
+    @media screen and (min-width: 1600px) {
+    }
+
     .content-upper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-
-      h3 {
-        text-transform: uppercase;
-      }
-
-      .nav-arrows {
+      .upper-inner {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        width: 72px;
+        width: 100%;
 
-        .arrow {
+        @media screen and (min-width: 760px) {
+          flex-direction: column-reverse;
+          align-items: unset;
+        }
+
+        .project-title-contain {
+          overflow: hidden;
+        }
+
+        h3 {
+          text-transform: uppercase;
+          transform: translateY(50%);
+          animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+
+          @keyframes title-anim {
+            0% {
+              opacity: 0;
+              transform: translateY(100%);
+            }
+
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        }
+
+        .nav-arrows {
           display: flex;
-          align-items: center;
+          justify-content: space-between;
+          width: 72px;
 
-          &:nth-child(1) {
-            transform: rotate(180deg);
+          @media screen and (min-width: 760px) {
+            margin-bottom: 48px;
+          }
+
+          @media screen and (min-width: 1280px) {
+            width: 80px;
+          }
+
+          @media screen and (min-width: 1600px) {
+            margin-bottom: 56px;
+          }
+
+          .arrow {
+            display: flex;
+            align-items: center;
+
+            &:nth-child(1) {
+              transform: rotate(180deg);
+            }
+
+            svg {
+              height: 17px;
+
+              @media screen and (min-width: 760px) {
+                height: 18px;
+              }
+
+              @media screen and (min-width: 1600px) {
+                height: 20px;
+              }
+
+              g {
+                path {
+                  stroke: var(--font-colour);
+                  stroke-width: 1.5px;
+                }
+              }
+            }
+          }
+
+          .inactive {
             opacity: 0.5;
+            pointer-events: none;
 
             svg {
               g {
                 path {
                   stroke: #8d8d8d;
                 }
-              }
-            }
-          }
-
-          svg {
-            height: 17px;
-            g {
-              path {
-                stroke: #000;
-                stroke-width: 1.5px;
               }
             }
           }
@@ -67,38 +151,106 @@
       width: 100%;
       margin-top: 24px;
       font-size: 13px;
-      letter-spacing: 0.5px;
+      font-weight: 500;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      opacity: 0.5;
+      color: var(--accent-colour);
+
+      @media screen and (min-width: 760px) {
+        margin-top: 16px;
+        font-size: 15px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-top: 24px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        margin-top: 32px;
+        font-size: 16px;
+      }
     }
 
     .content-lower {
-      display: flex;
-      justify-content: space-between;
       width: 100%;
       margin-top: 96px;
 
-      a {
+      @media screen and (min-width: 760px) {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .lower-inner {
         display: flex;
-        align-items: center;
-        font-size: 17px;
+        justify-content: space-between;
+        width: 100%;
 
-        &:nth-child(1) {
-          svg {
-            width: 12px;
-            height: 12px;
-            margin-left: 6px;
-            transform: translateY(2px);
+        a {
+          display: flex;
+          align-items: center;
+          font-size: 17px;
+          font-weight: 500;
 
-            path {
-              stroke: #8d8d8d;
-              stroke-width: 0.8px;
+          @media screen and (min-width: 1280px) {
+            font-size: 18px;
+          }
+
+          @media screen and (min-width: 1600px) {
+            font-size: 20px;
+          }
+
+          &:nth-child(1) {
+            svg {
+              width: 12px;
+              height: 12px;
+              margin-left: 6px;
+              transform: translateY(2px);
+
+              @media screen and (min-width: 1280px) {
+                width: 13px;
+                height: 13px;
+              }
+
+              @media screen and (min-width: 1600px) {
+                width: 14px;
+                height: 14px;
+              }
+
+              path {
+                stroke: #8d8d8d;
+                stroke-width: 0.8px;
+              }
             }
+
+            @media screen and (min-width: 760px) {
+              svg {
+                path {
+                  stroke-width: 1px;
+                }
+              }
+            }
+          }
+
+          &:nth-last-child(1) {
+            color: #8d8d8d;
           }
         }
 
-        &:nth-last-child(1) {
-          color: #8d8d8d;
+        span {
+          font-size: 17px;
+          font-weight: 500;
+          color: var(--accent-colour);
+
+          @media screen and (min-width: 760px) {
+          }
+
+          @media screen and (min-width: 1280px) {
+            font-size: 18px;
+          }
+
+          @media screen and (min-width: 1600px) {
+            font-size: 20px;
+          }
         }
       }
     }

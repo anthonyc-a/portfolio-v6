@@ -9,19 +9,27 @@ const Footer = () => {
   return (
     <div className="footer">
       <Logo />
-      <div className="footer-socials">
-        <a href={instaLink}>Instagram</a>
-        <a href={githubLink}>Github</a>
-        <a href={linkedLink}>LinkedIn</a>
-      </div>
-      <div className="footer-description">
-        <p>
-          I design and build fast, responsive websites to ensure your business
-          stands out.
-        </p>
-      </div>
-      <div className="footer-copyright">
-        <p>© 2022</p>
+      <div className="footer-inner">
+        <div className="footer-copyright">
+          <p>© 2022</p>
+        </div>
+        <div className="footer-socials">
+          <a href={instaLink} target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+          <a href={githubLink} target="_blank" rel="noreferrer">
+            Github
+          </a>
+          <a href={linkedLink} target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        </div>
+        <div className="footer-description">
+          <p>
+            I design and build fast, responsive websites to ensure your business
+            stands out.
+          </p>
+        </div>
       </div>
     </div>
   )

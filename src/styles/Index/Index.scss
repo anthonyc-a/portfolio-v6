@@ -1,11 +1,43 @@
-@import "../Layout/Layout.scss";
-@import "../Sections/Sections.scss";
-@import "../Projects/Projects.scss";
+@import "../Layout/Layout.css";
+@import "../Sections/Sections.css";
+@import "../Projects/Projects.css";
 
 $black: #000;
-$grey: #646464;
+$obsidian: #151515;
+$charcoal: #1a1a1a;
+$darkgrey: #808080;
+$grey: #8d8d8d;
+$lightgrey: #d7d7d7;
 $white: #fff;
-$offwhite: #ddd;
+$offwhite: #e3e1e0;
+
+.dark-theme {
+  --primary-colour: #{$obsidian};
+  --secondary-colour: #{$charcoal};
+  --font-colour: #{$white};
+  --accent-colour: #{$grey};
+  --line-colour: #{$darkgrey};
+
+  .social-icon {
+    img {
+      filter: invert(1);
+    }
+  }
+
+  .services-header {
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+.light-theme {
+  --primary-colour: #{$offwhite};
+  --secondary-colour: #{$lightgrey};
+  --font-colour: #{$black};
+  --accent-colour: #{$grey};
+  --line-colour: #{$darkgrey};
+}
 
 * {
   box-sizing: border-box;
@@ -20,11 +52,11 @@ $offwhite: #ddd;
 }
 
 ::-moz-selection {
-  background-color: #713dc5;
+  background-color: transparent;
 }
 
 ::selection {
-  background-color: #713dc5;
+  background-color: transparent;
 }
 
 html {
@@ -35,23 +67,23 @@ html {
 
 body {
   height: 100%;
-  background-color: #E3E1E0;
-  color: #000;
+  background-color: var(--primary-colour);
+  color: var(--font-colour);
 }
 
 main {
   padding: 160px 16px 104px 16px;
 
   @media screen and (min-width: 640px) {
-    padding: 160px 40px 104px 40px;
+    padding: 160px 40px 144px 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 160px 80px 104px 80px;
+    padding: 160px 80px 144px 80px;
   }
 
   @media screen and (min-width: 1600px) {
-    padding: 160px 120px 104px 120px;
+    padding: 160px 120px 144px 120px;
   }
 }
 
@@ -59,7 +91,11 @@ section {
   margin-top: 104px;
 
   &:nth-child(1) {
-      margin-top: unset;
+    margin-top: unset;
+  }
+
+  @media screen and (min-width: 760px) {
+    margin-top: 144px;
   }
 }
 
@@ -69,27 +105,58 @@ a {
 }
 
 p {
-    font-size: 14px;
-    line-height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+
+  @media screen and (min-width: 760px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 h2 {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 
   @media screen and (min-width: 640px) {
     font-size: 24px;
   }
 
+  @media screen and (min-width: 760px) {
+    font-size: 26px;
+  }
+
   @media screen and (min-width: 1280px) {
     font-size: 28px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 30px;
   }
 }
 
 h3 {
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 600;
+
+  @media screen and (min-width: 640px) {
+    font-size: 21px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 23px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 25px;
+  }
 }
 
 ul {
@@ -104,11 +171,25 @@ ul {
   height: 40px;
   z-index: 100000;
 
+  @media screen and (min-width: 1600px) {
+    width: 45px;
+    height: 45px;
+  }
+
   svg {
     height: 20px;
+
+    @media screen and (min-width: 760px) {
+      height: 22px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      height: 24px;
+    }
+
     g {
       path {
-        fill: #000;
+        fill: var(--font-colour);
       }
     }
   }

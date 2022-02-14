@@ -27,7 +27,7 @@
     .project-img-inner {
       display: flex;
       width: 300%;
-      transition: 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+      transition: 0.6s cubic-bezier(0.51, 0.92, 0.24, 1);
 
       img {
         width: calc(100% / 3);
@@ -71,7 +71,7 @@
         h3 {
           text-transform: uppercase;
           transform: translateY(50%);
-          animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+          animation: title-anim 0.6s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
 
           @keyframes title-anim {
             0% {

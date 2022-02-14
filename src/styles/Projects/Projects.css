@@ -45,8 +45,8 @@
   display: -ms-flexbox;
   display: flex;
   width: 300%;
-  -webkit-transition: 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
-  transition: 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  -webkit-transition: 0.6s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: 0.6s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 .projects .project-img-contain .project-img-inner img {
@@ -105,8 +105,8 @@
   text-transform: uppercase;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
-  -webkit-animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
-          animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+  -webkit-animation: title-anim 0.6s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+          animation: title-anim 0.6s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
 }
 
 @-webkit-keyframes title-anim {

@@ -22,6 +22,7 @@ const SEO = () => {
         content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
       />
       <link rel="icon" href={icon} type="image/png" />
+    
     </Helmet>
   )
 }

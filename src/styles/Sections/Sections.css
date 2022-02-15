@@ -74,7 +74,7 @@
 
 .title-contain .description span {
   display: block;
-  margin-top: 2px;
+  margin-top: 4px;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.4px;
@@ -115,7 +115,7 @@
 
 @media screen and (min-width: 760px) {
   .social-icons {
-    margin-top: 56px;
+    margin-top: 48px;
   }
 }
 
@@ -134,8 +134,6 @@
   margin-right: 20px;
   border-radius: 100%;
   border: 1px solid var(--accent-colour);
-  -webkit-transition: border-color 0.2s ease-in-out;
-  transition: border-color 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 1280px) {
@@ -203,8 +201,6 @@
   font-size: 17px;
   font-weight: 500;
   color: var(--accent-colour);
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 1280px) {
@@ -252,8 +248,6 @@
 .email-btn svg path {
   stroke: #8d8d8d;
   stroke-width: 1px;
-  -webkit-transition: stroke 0.2s ease-in-out;
-  transition: stroke 0.2s ease-in-out;
 }
 
 .about {
@@ -383,7 +377,7 @@
 
 @media screen and (min-width: 760px) {
   .services .services-inner .services-grid .services-item .services-header {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
@@ -399,7 +393,7 @@
 
 @media screen and (min-width: 760px) {
   .services .services-inner .services-grid .services-item .services-txt {
-    padding-top: 20px;
+    padding-top: 18px;
   }
 }
 

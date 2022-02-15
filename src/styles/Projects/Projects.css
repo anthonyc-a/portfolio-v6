@@ -258,25 +258,25 @@
 }
 
 .projects .project-content .project-description {
-  width: 80%;
   margin-top: 24px;
 }
 
 @media screen and (min-width: 760px) {
   .projects .project-content .project-description {
-    width: 55%;
+    width: 60%;
   }
 }
 
 .projects .project-content .content-lower {
   width: 100%;
-  margin-top: 96px;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 760px) {
   .projects .project-content .content-lower {
     position: absolute;
     bottom: 0;
+    margin-top: 96px;
   }
 }
 

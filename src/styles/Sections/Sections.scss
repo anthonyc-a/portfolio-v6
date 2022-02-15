@@ -50,7 +50,7 @@
 
     span {
       display: block;
-      margin-top: 2px;
+      margin-top: 4px;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0.4px;
@@ -81,7 +81,7 @@
   overflow: hidden;
 
   @media screen and (min-width: 760px) {
-    margin-top: 56px;
+    margin-top: 48px;
   }
 
   .social-icon {
@@ -93,7 +93,6 @@
     margin-right: 20px;
     border-radius: 100%;
     border: 1px solid var(--accent-colour);
-    transition: border-color 0.2s ease-in-out;
 
     @media screen and (min-width: 1280px) {
       margin-right: 24px;
@@ -149,7 +148,6 @@
   font-size: 17px;
   font-weight: 500;
   color: var(--accent-colour);
-  transition: color 0.2s ease-in-out;
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;
@@ -188,7 +186,6 @@
     path {
       stroke: #8d8d8d;
       stroke-width: 1px;
-      transition: stroke 0.2s ease-in-out;
     }
   }
 }
@@ -289,7 +286,7 @@
           overflow: hidden;
 
           @media screen and (min-width: 760px) {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
           }
         }
 
@@ -303,7 +300,7 @@
           padding-top: 16px;
 
           @media screen and (min-width: 760px) {
-            padding-top: 20px;
+            padding-top: 18px;
           }
         }
       }

@@ -54,8 +54,8 @@ const About = () => {
             to generate sites and interfaces.
             <br />
             <br />
-            The majority of my time is spent designing and building fast,
-            responsive websites for small and medium sized businesses. I focus
+            Most of my time is spent designing and building fast,
+            responsive websites for small to medium sized businesses. I focus
             on clean design and robust code to improve visitor conversion and
             customer retention.
           </p>

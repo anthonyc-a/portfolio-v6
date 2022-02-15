@@ -139,6 +139,7 @@
   margin-bottom: 28px;
   font-size: 22px;
   font-weight: 600;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
   overflow: hidden;
 }
@@ -445,6 +446,7 @@
 
 .footer .footer-inner .footer-description {
   margin-top: 40px;
+  font-weight: 500;
   opacity: 0.5;
 }
 

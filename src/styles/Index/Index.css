@@ -446,7 +446,6 @@
 
 .footer .footer-inner .footer-description {
   margin-top: 40px;
-  font-weight: 500;
   opacity: 0.5;
 }
 
@@ -744,7 +743,7 @@
 
 @media screen and (min-width: 760px) {
   .about .about-inner {
-    width: 420px;
+    width: 440px;
     margin-left: 180px;
   }
 }
@@ -1525,7 +1524,8 @@ a {
 }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
 }

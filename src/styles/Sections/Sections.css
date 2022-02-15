@@ -417,7 +417,7 @@
   margin-top: 80px;
   padding: 16px 0;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   text-align: center;
@@ -429,6 +429,7 @@
   .services .services-inner .services-aside .pricing-btn {
     top: calc(100vh - 120px);
     margin-top: unset;
+    font-weight: 700;
   }
 }
 

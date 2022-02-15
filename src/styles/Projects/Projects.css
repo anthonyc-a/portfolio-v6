@@ -230,7 +230,7 @@
 .projects .project-content .project-type {
   width: 100%;
   margin-top: 24px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -297,9 +297,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.2px;
+}
+
+@media screen and (min-width: 1280px) {
+  .projects .project-content .content-lower .lower-inner a {
+    font-size: 17px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -313,8 +319,8 @@
 }
 
 .projects .project-content .content-lower .lower-inner a:nth-child(1) svg {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   margin-left: 6px;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);

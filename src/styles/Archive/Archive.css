@@ -162,16 +162,65 @@
   width: 100%;
 }
 
-.archive .carousel {
+.archive .archive-slider {
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.archive .archive-slider .carousel {
   width: 100%;
 }
 
-.archive .carousel .archive-grid-item {
+.archive .archive-slider .carousel .archive-grid-item {
   width: calc(100% / 2);
   margin-right: 20px;
 }
 
-.archive .carousel .archive-grid-item .grid-item-inner img {
+.archive .archive-slider .carousel .archive-grid-item .grid-item-inner .item-overlay {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 5px);
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #e3e1e0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.archive .archive-slider .carousel .archive-grid-item .grid-item-inner .item-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.archive .archive-slider .carousel .archive-grid-item .grid-item-inner .item-overlay.active span {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.archive .archive-slider .carousel .archive-grid-item .grid-item-inner .item-overlay span {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.archive .archive-slider .carousel .archive-grid-item .grid-item-inner img {
   width: 100%;
 }
 /*# sourceMappingURL=Archive.css.map */

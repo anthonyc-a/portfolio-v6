@@ -12,7 +12,6 @@ const flickityOptions = {
   initialIndex: 0,
   freeScroll: true,
   contain: true,
-  wrapAround: true,
   prevNextButtons: false,
   pageDots: false,
 }

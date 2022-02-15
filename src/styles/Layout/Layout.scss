@@ -204,8 +204,6 @@
         }
 
         .active {
-          color: var(--font-colour);
-
           &::after {
             content: "";
             position: absolute;

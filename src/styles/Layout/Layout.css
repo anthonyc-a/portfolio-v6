@@ -267,10 +267,6 @@
   color: var(--font-colour);
 }
 
-.header .header-inner .nav li .active {
-  color: var(--font-colour);
-}
-
 .header .header-inner .nav li .active::after {
   content: "";
   position: absolute;

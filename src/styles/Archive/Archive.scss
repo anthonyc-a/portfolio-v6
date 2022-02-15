@@ -1,29 +1,23 @@
 .archive {
+  position: relative;
   width: 100%;
 
   @media screen and (min-width: 760px) {
     display: flex;
   }
 
+  .foo {
+    position: absolute;
+    top: -80px;
+    right: 0;
+  }
+
   .archive-img-contain {
     width: calc(100% + 32px);
     transform: translateX(-16px);
-    opacity: 0;
-    animation: appear 0.8s ease forwards;
-
-    @keyframes appear {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
 
     @media screen and (min-width: 760px) {
       transform: translateX(-40px);
-      width: calc(100% + 80px);
     }
 
     @media screen and (min-width: 1280px) {
@@ -37,7 +31,7 @@
 
     .archive-img-inner {
       position: sticky;
-      top: 160px;
+      top: 28%;
       width: 100%;
 
       img {
@@ -52,8 +46,6 @@
     display: none;
     flex-wrap: wrap;
     width: 100%;
-    padding: 24px;
-    background-color: var(--secondary-colour);
     border-radius: 4px;
 
     @media screen and (min-width: 760px) {
@@ -98,9 +90,11 @@
           left: 0;
           width: 100%;
           height: calc(100% - 5px);
-          background-color: rgba(0, 0, 0, 0.6);
+          background-color: rgba(0, 0, 0, 0.8);
+          font-size: 15px;
           font-weight: 600;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.4px;
+          text-transform: uppercase;
           color: #e3e1e0;
           visibility: hidden;
           opacity: 0;
@@ -117,6 +111,9 @@
           }
 
           span {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
             transform: translateY(8px);
             transition: 0.2s ease-in-out;
           }

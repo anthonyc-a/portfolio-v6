@@ -7,7 +7,7 @@ import img2 from "../../../static/img/PAK.webp"
 import img3 from "../../../static/img/carhartt.webp"
 import Tags from "./Tags/Tags"
 
-const Projects = ({ next, link }) => {
+const Projects = ({ next, link, description, tags }) => {
   const [count, setCount] = React.useState(0)
 
   return (
@@ -33,35 +33,48 @@ const Projects = ({ next, link }) => {
               {count === 1 && <h3>Pak NFT Archive</h3>}
               {count === 2 && <h3>carhartt clone</h3>}
             </div>
-            <NavArrows count={count} setCount={setCount} />
+            <NavArrows
+              count={count}
+              setCount={setCount}
+              description={description}
+            />
           </div>
-          <div className="project-type">
+          <div
+            className={tags === false ? "project-type stretch" : "project-type"}
+          >
             <div className="project-type-inner">
               {count === 0 && <span>design + code</span>}
               {count === 1 && <span>design + code</span>}
               {count === 2 && <span>code</span>}
             </div>
           </div>
-          <div className="project-description">
-            {count === 0 && (
-              <p>
-                A site redesign for the successful architect and 3D artist:
-                Roman Vlasov.
-              </p>
-            )}
-            {count === 1 && (
-              <p>
-                I’m currently designing a web based archive for Murat Pak, also
-                known as 'Pak'.
-              </p>
-            )}
-            {count === 2 && (
-              <p>
-                A functional clone of the ‘New arrivals' page on the Carhartt WIP site.
-              </p>
-            )}
-          </div>
-          <Tags />
+          {description === false ? null : (
+            <div className="project-description">
+              {count === 0 && (
+                <p>
+                  A site redesign for the successful architect and 3D artist:
+                  Roman Vlasov.
+                </p>
+              )}
+              {count === 1 && (
+                <p>
+                  I’m currently designing a web based archive for Murat Pak,
+                  also known as 'Pak'.
+                </p>
+              )}
+              {count === 2 && (
+                <p>
+                  A functional clone of the ‘New arrivals' page on the Carhartt
+                  WIP site.
+                </p>
+              )}
+            </div>
+          )}
+          {tags === false ? null : (
+            <>
+              <Tags />
+            </>
+          )}
         </div>
 
         <div className="content-lower">

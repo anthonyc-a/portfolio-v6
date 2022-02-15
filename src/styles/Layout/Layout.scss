@@ -211,6 +211,7 @@
         }
 
         .active {
+            opacity: 0.5;
           pointer-events: none;
         }
       }
@@ -248,7 +249,7 @@
     left: 0;
     width: 100%;
     background-color: var(--font-colour);
-    animation: scrollbar-anim 1.6s ease-out;
+    animation: scrollbar-anim 1.2s ease-out;
 
     @keyframes scrollbar-anim {
       0% {

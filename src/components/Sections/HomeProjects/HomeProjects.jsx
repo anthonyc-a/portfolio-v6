@@ -10,7 +10,7 @@ const HomeProjects = () => {
         <Title title="featured projects" />
         <Description description="Some selected work" />
       </div>
-      <Projects next={"All projects"} link={"/projects"} />
+      <Projects next={"All projects"} link={"/projects"} description={false} tags={false} />
     </section>
   )
 }

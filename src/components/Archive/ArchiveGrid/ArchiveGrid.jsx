@@ -31,7 +31,7 @@ const ArchiveGrid = ({ preview, setPreview }) => {
       <ArchiveGridItem
         preview={preview}
         setPreview={setPreview}
-        title={"Something Studios"}
+        title={"Smthn Studios"}
         img={img4}
       />
       <ArchiveGridItem

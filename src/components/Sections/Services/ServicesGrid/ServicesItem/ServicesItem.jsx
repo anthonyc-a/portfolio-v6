@@ -6,7 +6,7 @@ import ServicesLine from "./ServicesLine/ServicesLine"
 const ServicesItem = ({ title, icon, description }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 1,
+    threshold: 0.5,
   })
 
   const animation = useAnimation()

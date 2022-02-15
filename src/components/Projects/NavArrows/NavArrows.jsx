@@ -1,9 +1,11 @@
 import React from "react"
 import SideArrow from "./SideArrow"
 
-const NavArrows = ({ count, setCount }) => {
+const NavArrows = ({ count, setCount, description }) => {
   return (
-    <div className="nav-arrows">
+    <div
+      className={description === false ? "nav-arrows stretch" : "nav-arrows"}
+    >
       <div
         className={count === 0 ? "arrow inactive" : "arrow"}
         onClick={() => {

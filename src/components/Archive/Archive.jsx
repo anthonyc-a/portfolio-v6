@@ -14,6 +14,8 @@ const Archive = () => {
         </div>
       </div>
 
+      <p className="foo">Choose project</p>
+
       <ArchiveGrid preview={preview} setPreview={setPreview} />
       <ArchiveSlider preview={preview} setPreview={setPreview} />
     </div>

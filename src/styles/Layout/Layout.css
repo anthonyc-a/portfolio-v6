@@ -275,6 +275,7 @@
 }
 
 .header .header-inner .nav li .active {
+  opacity: 0.5;
   pointer-events: none;
 }
 
@@ -315,8 +316,8 @@
   left: 0;
   width: 100%;
   background-color: var(--font-colour);
-  -webkit-animation: scrollbar-anim 1.6s ease-out;
-          animation: scrollbar-anim 1.6s ease-out;
+  -webkit-animation: scrollbar-anim 1.2s ease-out;
+          animation: scrollbar-anim 1.2s ease-out;
 }
 
 @-webkit-keyframes scrollbar-anim {

@@ -81,19 +81,12 @@
         }
 
         h3 {
+          font-size: 22px;
           letter-spacing: 0.2px;
           text-transform: capitalize;
 
-          @keyframes title-anim {
-            0% {
-              opacity: 0;
-              transform: translateY(100%);
-            }
-
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
+          @media screen and (min-width: 760px) {
+            font-size: 24px;
           }
         }
 

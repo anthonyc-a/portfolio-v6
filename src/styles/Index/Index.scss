@@ -18,6 +18,7 @@ $offwhite: #e3e1e0;
   --secondary-colour: #{$charcoal};
   --font-colour: #{$white};
   --accent-colour: #{$grey};
+  --theme-switch-colour: #605DD1;
   --tag-colour: #{$ok};
   --line-colour: #{$darkgrey};
 
@@ -39,6 +40,7 @@ $offwhite: #e3e1e0;
   --secondary-colour: #{$lightgrey};
   --font-colour: #{$black};
   --accent-colour: #{$grey};
+  --theme-switch-colour: #{$grey};
   --tag-colour: #{$grey};
   --line-colour: #{$darkgrey};
 }
@@ -83,7 +85,7 @@ main {
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 172px 80px 144px 80px;
+    padding: 184px 80px 144px 80px;
   }
 
   @media screen and (min-width: 1600px) {
@@ -179,7 +181,7 @@ ul {
   height: 40px;
   z-index: 100000;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1280px) {
     width: 45px;
     height: 45px;
   }
@@ -191,7 +193,7 @@ ul {
       height: 22px;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1280px) {
       height: 24px;
     }
 

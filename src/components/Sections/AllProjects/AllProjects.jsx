@@ -10,7 +10,7 @@ const AllProjects = () => {
         <Title title="all projects" />
         <Description description="My recent work" />
       </div>
-      <Projects next={"Archive"} link={"/archive"} />
+      <Projects next={"View Archive"} link={"/archive"} />
     </section>
   )
 }

@@ -172,7 +172,7 @@
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   z-index: 100000;
 }
 
@@ -213,7 +213,7 @@
   position: relative;
   width: 44px;
   height: 18px;
-  background-color: #8d8d8d80;
+  background-color: var(--theme-switch-colour);
   border-radius: 20px;
 }
 
@@ -227,8 +227,10 @@
   height: 22px;
   background-color: var(--font-colour);
   border-radius: 100%;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .header .header-inner .theme-switch .switch-inner .switch-dot.active {
@@ -255,6 +257,7 @@
   margin-right: 40px;
   font-size: 16px;
   font-weight: 600;
+  letter-spacing: 0.4px;
 }
 
 .header .header-inner .nav li:nth-last-child(1) {
@@ -273,7 +276,6 @@
 }
 
 .header .header-inner .nav li .active {
-  color: var(--accent-colour);
   pointer-events: none;
 }
 
@@ -284,7 +286,7 @@
   right: 40px;
   width: 1px;
   height: 104px;
-  background-color: var(--accent-colour);
+  background-color: var(--tag-colour);
 }
 
 @media screen and (min-width: 760px) {
@@ -314,8 +316,8 @@
   left: 0;
   width: 100%;
   background-color: var(--font-colour);
-  -webkit-animation: scrollbar-anim 1.4s ease-out;
-          animation: scrollbar-anim 1.4s ease-out;
+  -webkit-animation: scrollbar-anim 1.6s ease-out;
+          animation: scrollbar-anim 1.6s ease-out;
 }
 
 @-webkit-keyframes scrollbar-anim {

@@ -131,7 +131,7 @@
       font-size: 16px;
       font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
       z-index: 100000;
 
       @media screen and (min-width: 760px) {
@@ -161,7 +161,7 @@
         position: relative;
         width: 44px;
         height: 18px;
-        background-color: #8d8d8d80;
+        background-color: var(--theme-switch-colour);
         border-radius: 20px;
 
         .switch-dot {
@@ -173,7 +173,7 @@
           height: 22px;
           background-color: var(--font-colour);
           border-radius: 100%;
-          transition: 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
 
           &.active {
             transform: translateX(0) translateY(-50%);
@@ -196,6 +196,7 @@
         margin-right: 40px;
         font-size: 16px;
         font-weight: 600;
+        letter-spacing: 0.4px;
 
         &:nth-last-child(1) {
           margin-right: unset;
@@ -211,7 +212,6 @@
         }
 
         .active {
-          color: var(--accent-colour);
           pointer-events: none;
         }
       }
@@ -226,7 +226,7 @@
   right: 40px;
   width: 1px;
   height: 104px;
-  background-color: var(--accent-colour);
+  background-color: var(--tag-colour);
 
   @media screen and (min-width: 760px) {
     display: block;
@@ -249,7 +249,7 @@
     left: 0;
     width: 100%;
     background-color: var(--font-colour);
-    animation: scrollbar-anim 1.4s ease-out;
+    animation: scrollbar-anim 1.6s ease-out;
 
     @keyframes scrollbar-anim {
       0% {

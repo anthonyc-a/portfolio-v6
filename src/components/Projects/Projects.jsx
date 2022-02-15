@@ -43,10 +43,23 @@ const Projects = ({ next, link }) => {
             </div>
           </div>
           <div className="project-description">
-            <p>
-              A site redesign for the successful architect and 3D artist: Roman
-              Vlasov.
-            </p>
+            {count === 0 && (
+              <p>
+                A site redesign for the successful architect and 3D artist:
+                Roman Vlasov.
+              </p>
+            )}
+            {count === 1 && (
+              <p>
+                I’m currently designing a web based archive for Murat Pak, also
+                known as 'Pak'.
+              </p>
+            )}
+            {count === 2 && (
+              <p>
+                A functional clone of the ‘New arrivals' page on the Carhartt WIP site.
+              </p>
+            )}
           </div>
           <Tags />
         </div>

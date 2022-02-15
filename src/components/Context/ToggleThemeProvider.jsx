@@ -4,7 +4,7 @@ export const ThemeStateContext = React.createContext()
 export const ThemeDispatchContext = React.createContext()
 
 const initialState = {
-  lightMode: true,
+  lightMode: false,
 }
 
 function reducer(state, action) {

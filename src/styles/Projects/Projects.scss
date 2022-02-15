@@ -81,9 +81,9 @@
         }
 
         h3 {
-          letter-spacing: 0.4px;
-          text-transform: uppercase;
-          animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+            font-size: 26px;
+          letter-spacing: 0.2px;
+          text-transform: capitalize;
 
           @keyframes title-anim {
             0% {
@@ -169,7 +169,7 @@
       color: var(--accent-colour);
 
       @media screen and (min-width: 760px) {
-        margin-top: 16px;
+        margin-top: 24px;
         font-size: 15px;
       }
 

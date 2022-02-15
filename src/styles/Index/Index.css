@@ -172,7 +172,7 @@
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   z-index: 100000;
 }
 
@@ -213,7 +213,7 @@
   position: relative;
   width: 44px;
   height: 18px;
-  background-color: #8d8d8d80;
+  background-color: var(--theme-switch-colour);
   border-radius: 20px;
 }
 
@@ -227,8 +227,10 @@
   height: 22px;
   background-color: var(--font-colour);
   border-radius: 100%;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .header .header-inner .theme-switch .switch-inner .switch-dot.active {
@@ -255,6 +257,7 @@
   margin-right: 40px;
   font-size: 16px;
   font-weight: 600;
+  letter-spacing: 0.4px;
 }
 
 .header .header-inner .nav li:nth-last-child(1) {
@@ -273,7 +276,6 @@
 }
 
 .header .header-inner .nav li .active {
-  color: var(--accent-colour);
   pointer-events: none;
 }
 
@@ -284,7 +286,7 @@
   right: 40px;
   width: 1px;
   height: 104px;
-  background-color: var(--accent-colour);
+  background-color: var(--tag-colour);
 }
 
 @media screen and (min-width: 760px) {
@@ -314,8 +316,8 @@
   left: 0;
   width: 100%;
   background-color: var(--font-colour);
-  -webkit-animation: scrollbar-anim 1.4s ease-out;
-          animation: scrollbar-anim 1.4s ease-out;
+  -webkit-animation: scrollbar-anim 1.6s ease-out;
+          animation: scrollbar-anim 1.6s ease-out;
 }
 
 @-webkit-keyframes scrollbar-anim {
@@ -1031,10 +1033,9 @@
 }
 
 .projects .project-content .content-upper .upper-inner h3 {
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  -webkit-animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
-          animation: title-anim 0.4s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+  font-size: 26px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
 }
 
 @keyframes title-anim {
@@ -1134,7 +1135,7 @@
 
 @media screen and (min-width: 760px) {
   .projects .project-content .project-type {
-    margin-top: 16px;
+    margin-top: 24px;
     font-size: 15px;
   }
 }
@@ -1312,6 +1313,7 @@
   .archive .archive-img-contain {
     -webkit-transform: translateX(-40px);
             transform: translateX(-40px);
+    width: calc(100% + 80px);
   }
 }
 
@@ -1333,7 +1335,7 @@
 .archive .archive-img-contain .archive-img-inner {
   position: -webkit-sticky;
   position: sticky;
-  top: 200px;
+  top: 160px;
   width: 100%;
 }
 
@@ -1348,6 +1350,9 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  padding: 24px;
+  background-color: var(--secondary-colour);
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 760px) {
@@ -1401,7 +1406,7 @@
   left: 0;
   width: 100%;
   height: calc(100% - 5px);
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #e3e1e0;
@@ -1442,12 +1447,18 @@
   overflow: hidden;
 }
 
+@media screen and (min-width: 760px) {
+  .archive .archive-slider {
+    display: none;
+  }
+}
+
 .archive .archive-slider .carousel {
   width: 100%;
 }
 
 .archive .archive-slider .carousel .archive-grid-item {
-  width: calc((100% / 1.5) - 20px);
+  width: calc((100% / 1.5) - 4px);
   margin-right: 20px;
 }
 
@@ -1497,6 +1508,8 @@
 
 .archive .archive-slider .carousel .archive-grid-item .grid-item-inner img {
   width: 100%;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .dark-theme {
@@ -1504,6 +1517,7 @@
   --secondary-colour: #1a1a1a;
   --font-colour: #fff;
   --accent-colour: #8d8d8d;
+  --theme-switch-colour: #605DD1;
   --tag-colour: #2b2b2b;
   --line-colour: #808080;
 }
@@ -1523,6 +1537,7 @@
   --secondary-colour: #d7d7d7;
   --font-colour: #000;
   --accent-colour: #8d8d8d;
+  --theme-switch-colour: #8d8d8d;
   --tag-colour: #8d8d8d;
   --line-colour: #808080;
 }
@@ -1572,7 +1587,7 @@ main {
 
 @media screen and (min-width: 1280px) {
   main {
-    padding: 172px 80px 144px 80px;
+    padding: 184px 80px 144px 80px;
   }
 }
 
@@ -1697,7 +1712,7 @@ ul {
   z-index: 100000;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1280px) {
   .logo {
     width: 45px;
     height: 45px;
@@ -1714,7 +1729,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1280px) {
   .logo svg {
     height: 24px;
   }

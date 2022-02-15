@@ -165,6 +165,8 @@
 .archive .archive-slider {
   width: 100%;
   margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--accent-colour);
   overflow: hidden;
 }
 
@@ -173,8 +175,8 @@
 }
 
 .archive .archive-slider .carousel .archive-grid-item {
-  width: calc((100% / 1.5) - 16px);
-  margin-right: 16px;
+  width: calc((100% / 1.5) - 20px);
+  margin-right: 20px;
 }
 
 .archive .archive-slider .carousel .archive-grid-item .grid-item-inner .item-overlay {
@@ -192,7 +194,6 @@
   left: 0;
   width: 100%;
   height: calc(100% - 5px);
-  border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.75);
   font-size: 14px;
   font-weight: 500;
@@ -224,6 +225,5 @@
 
 .archive .archive-slider .carousel .archive-grid-item .grid-item-inner img {
   width: 100%;
-  border-radius: 4px;
 }
 /*# sourceMappingURL=Archive.css.map */

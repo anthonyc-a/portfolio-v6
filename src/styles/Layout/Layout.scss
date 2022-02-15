@@ -94,7 +94,7 @@
       .menu-list {
         li {
           margin-bottom: 28px;
-          font-size: 20px;
+          font-size: 22px;
           font-weight: 600;
           text-transform: uppercase;
           overflow: hidden;
@@ -110,10 +110,10 @@
       }
 
       .theme-switch {
-          position: absolute;
-          display: flex;
-          bottom: 24px;
-          right: 16px;
+        position: absolute;
+        display: flex;
+        bottom: 24px;
+        right: 16px;
       }
     }
 
@@ -184,6 +184,7 @@
       }
 
       li {
+        position: relative;
         margin-right: 40px;
         font-size: 16px;
         font-weight: 600;
@@ -194,6 +195,27 @@
 
         @media screen and (min-width: 1600px) {
           font-size: 18px;
+        }
+
+        a {
+          position: relative;
+          color: var(--font-colour);
+        }
+
+        .active {
+          color: var(--font-colour);
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-25%);
+            left: -14px;
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+            background-color: var(--font-colour);
+          }
         }
       }
     }
@@ -207,7 +229,7 @@
   right: 40px;
   width: 1px;
   height: 104px;
-  background-color: var(--line-colour);
+  background-color: var(--accent-colour);
 
   @media screen and (min-width: 760px) {
     display: block;
@@ -225,8 +247,26 @@
   }
 
   .scrollbar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: var(--font-colour);
+    animation: scrollbar-anim 1.8s cubic-bezier(0.51, 0.92, 0.24, 1);
+
+    @keyframes scrollbar-anim {
+      0% {
+        height: 100%;
+      }
+
+      50% {
+        height: 100%;
+      }
+
+      100% {
+        height: 0;
+      }
+    }
   }
 }
 
@@ -309,8 +349,8 @@
 
     .footer-copyright {
       margin-top: 40px;
-      opacity: 0.5;
       font-weight: 500;
+      opacity: 0.5;
 
       @media screen and (min-width: 760px) {
         margin-top: unset;

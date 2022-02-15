@@ -13,11 +13,12 @@ const Description = ({ description }) => {
   React.useEffect(() => {
     if (inView) {
       animation.start({
-        y: "0%",
+        y: 0,
+        opacity: 1,
         transition: {
           ease: [0.51, 0.92, 0.24, 1],
-          duration: 0.4,
-          delay: 0.6,
+          duration: 0.6,
+          delay: 0.3,
         },
       })
     }
@@ -25,6 +26,7 @@ const Description = ({ description }) => {
     if (!inView) {
       animation.start({
         y: "100%",
+        opacity: 0,
       })
     }
   }, [inView])

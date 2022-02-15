@@ -12,17 +12,18 @@ const Title = ({ title }) => {
   React.useEffect(() => {
     if (inView) {
       animation.start({
+        opacity: 1,
         y: "0%",
         transition: {
           ease: [0.51, 0.92, 0.24, 1],
-          duration: 0.4,
-          delay: 0.2
+          duration: 0.6,
         },
       })
     }
 
     if (!inView) {
       animation.start({
+        opacity: 0,
         y: "100%",
       })
     }

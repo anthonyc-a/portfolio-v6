@@ -5,8 +5,9 @@ import LinkArrow from "../Sections/Arrows/LinkArrow/LinkArrow"
 import img1 from "../../../static/img/arch.webp"
 import img2 from "../../../static/img/PAK.webp"
 import img3 from "../../../static/img/carhartt.webp"
+import Tags from "./Tags/Tags"
 
-const Projects = () => {
+const Projects = ({ next, link }) => {
   const [count, setCount] = React.useState(0)
 
   return (
@@ -41,6 +42,13 @@ const Projects = () => {
               {count === 2 && <span>code</span>}
             </div>
           </div>
+          <div className="project-description">
+            <p>
+              A site redesign for the successful architect and 3D artist: Roman
+              Vlasov.
+            </p>
+          </div>
+          <Tags />
         </div>
 
         <div className="content-lower">
@@ -56,8 +64,7 @@ const Projects = () => {
                 Launch site <LinkArrow />
               </a>
             )}
-
-            <Link to="/projects">All projects</Link>
+            <Link to={link}>{next}</Link>
           </div>
         </div>
       </div>

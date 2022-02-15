@@ -3,12 +3,12 @@ import Footer from "./Footer/Footer"
 import Header from "./Header/Header"
 import SEO from "./SEO/SEO"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title }) => {
   const [menuOpen, setMenuOpen] = React.useState(false)
 
   return (
     <>
-      <SEO />
+      <SEO title={title} />
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <main>{children}</main>
       <Footer />

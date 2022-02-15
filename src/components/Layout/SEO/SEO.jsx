@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import { ThemeStateContext } from "../../Context/ToggleThemeProvider"
 import icon from "../../../../static/logo192.png"
 
-const SEO = () => {
+const SEO = ({title}) => {
   const theme = React.useContext(ThemeStateContext)
   const themeClass = theme.lightMode === false ? "dark-theme" : "light-theme"
 
@@ -11,7 +11,7 @@ const SEO = () => {
     <Helmet>
       <html lang="en" className={themeClass} />
       <title>
-        Anthony Animba | Freelance Web Designer and Developer in London
+        {title}
       </title>
       <meta
         name="description"

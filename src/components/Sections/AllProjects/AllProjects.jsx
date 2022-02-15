@@ -3,16 +3,16 @@ import Projects from "../../Projects/Projects"
 import Description from "../Title/Description"
 import Title from "../Title/Title"
 
-const HomeProjects = () => {
+const AllProjects = () => {
   return (
     <section>
       <div className="title-contain">
-        <Title title="featured projects" />
-        <Description description="Some selected work" />
+        <Title title="all projects" />
+        <Description description="My recent work" />
       </div>
-      <Projects next={"All projects"} link={"/projects"} />
+      <Projects next={"Archive"} link={"/archive"} />
     </section>
   )
 }
 
-export default HomeProjects
+export default AllProjects

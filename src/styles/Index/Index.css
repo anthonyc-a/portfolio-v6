@@ -137,7 +137,7 @@
 
 .header .header-inner .nav-menu .menu-list li {
   margin-bottom: 28px;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.4px;
   text-transform: uppercase;
@@ -257,7 +257,6 @@
   margin-right: 40px;
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.4px;
 }
 
 .header .header-inner .nav li:nth-last-child(1) {
@@ -458,6 +457,10 @@
   margin-top: 40px;
   font-weight: 500;
   opacity: 0.5;
+}
+
+.footer .footer-inner .footer-copyright p {
+  letter-spacing: unset;
 }
 
 @media screen and (min-width: 760px) {
@@ -1034,7 +1037,6 @@
 
 .projects .project-content .content-upper .upper-inner h3 {
   font-size: 22px;
-  letter-spacing: 0.2px;
   text-transform: capitalize;
 }
 
@@ -1104,7 +1106,7 @@
 
 .projects .project-content .content-upper .upper-inner .nav-arrows .arrow svg g path {
   stroke: var(--font-colour);
-  stroke-width: 1.5px;
+  stroke-width: 1.2px;
 }
 
 .projects .project-content .content-upper .upper-inner .nav-arrows .inactive {
@@ -1580,7 +1582,7 @@ main {
 
 @media screen and (min-width: 1280px) {
   main {
-    padding: 184px 80px 144px 80px;
+    padding: 160px 80px 144px 80px;
   }
 }
 
@@ -1633,7 +1635,6 @@ p {
 h2 {
   font-size: 24px;
   font-weight: 600;
-  letter-spacing: 0.4px;
   text-transform: uppercase;
 }
 

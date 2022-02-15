@@ -137,7 +137,7 @@
 
 .header .header-inner .nav-menu .menu-list li {
   margin-bottom: 28px;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.4px;
   text-transform: uppercase;
@@ -257,7 +257,6 @@
   margin-right: 40px;
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.4px;
 }
 
 .header .header-inner .nav li:nth-last-child(1) {
@@ -458,6 +457,10 @@
   margin-top: 40px;
   font-weight: 500;
   opacity: 0.5;
+}
+
+.footer .footer-inner .footer-copyright p {
+  letter-spacing: unset;
 }
 
 @media screen and (min-width: 760px) {

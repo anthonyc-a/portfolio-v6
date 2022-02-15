@@ -62,7 +62,7 @@
 .archive .archive-img-contain .archive-img-inner {
   position: -webkit-sticky;
   position: sticky;
-  top: 160px;
+  top: 200px;
   width: 100%;
 }
 
@@ -73,12 +73,18 @@
 
 .archive .archive-grid {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .archive .archive-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .archive .archive-grid .archive-grid-item {
@@ -153,6 +159,19 @@
 }
 
 .archive .archive-grid .archive-grid-item .grid-item-inner img {
+  width: 100%;
+}
+
+.archive .carousel {
+  width: 100%;
+}
+
+.archive .carousel .archive-grid-item {
+  width: calc(100% / 2);
+  margin-right: 20px;
+}
+
+.archive .carousel .archive-grid-item .grid-item-inner img {
   width: 100%;
 }
 /*# sourceMappingURL=Archive.css.map */

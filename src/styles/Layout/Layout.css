@@ -144,6 +144,11 @@
   overflow: hidden;
 }
 
+.header .header-inner .nav-menu .menu-list li .link-contain .active {
+  color: var(--accent-colour);
+  pointer-events: none;
+}
+
 .header .header-inner .nav-menu .menu-copyright {
   position: absolute;
   bottom: 32px;
@@ -267,17 +272,9 @@
   color: var(--font-colour);
 }
 
-.header .header-inner .nav li .active::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
-  left: -14px;
-  width: 5px;
-  height: 5px;
-  border-radius: 100%;
-  background-color: var(--font-colour);
+.header .header-inner .nav li .active {
+  color: var(--accent-colour);
+  pointer-events: none;
 }
 
 .scrollbar {

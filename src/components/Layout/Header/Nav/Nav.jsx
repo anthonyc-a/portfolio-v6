@@ -6,7 +6,7 @@ const Nav = () => {
     <ul className="nav">
       <li>
         <Link to="/projects" activeClassName="active" partiallyActive={true}>
-          Projects
+          + Projects
         </Link>
       </li>
       <li>

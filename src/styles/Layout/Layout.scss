@@ -99,6 +99,13 @@
           letter-spacing: 0.4px;
           text-transform: uppercase;
           overflow: hidden;
+
+          .link-contain {
+            .active {
+              color: var(--accent-colour);
+              pointer-events: none;
+            }
+          }
         }
       }
 
@@ -204,17 +211,8 @@
         }
 
         .active {
-          &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            transform: translateY(-25%);
-            left: -14px;
-            width: 5px;
-            height: 5px;
-            border-radius: 100%;
-            background-color: var(--font-colour);
-          }
+          color: var(--accent-colour);
+          pointer-events: none;
         }
       }
     }

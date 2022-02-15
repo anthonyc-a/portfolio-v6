@@ -36,7 +36,7 @@
 
     .archive-img-inner {
       position: sticky;
-      top: 160px;
+      top: 200px;
       width: 100%;
 
       img {
@@ -48,9 +48,13 @@
 
   .archive-grid {
     position: relative;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     width: 100%;
+
+    @media screen and (min-width: 760px) {
+      display: flex;
+    }
 
     .archive-grid-item {
       position: relative;
@@ -114,6 +118,20 @@
           }
         }
 
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .carousel {
+    width: 100%;
+    .archive-grid-item {
+      width: calc(100% / 2);
+      margin-right: 20px;
+
+      .grid-item-inner {
         img {
           width: 100%;
         }

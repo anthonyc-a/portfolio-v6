@@ -162,7 +162,6 @@
 }
 
 .header .header-inner .time {
-  display: none;
   position: absolute;
   margin-left: 64px;
   font-size: 16px;
@@ -174,7 +173,6 @@
 
 @media screen and (min-width: 760px) {
   .header .header-inner .time {
-    display: block;
     margin-left: 100px;
     font-weight: 600;
   }

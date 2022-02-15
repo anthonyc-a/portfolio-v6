@@ -39,7 +39,7 @@ const MenuList = ({ menuOpen }) => {
     >
       <li>
         <motion.div className="link-contain" variants={link}>
-          <Link to="/projects">+ projects</Link>
+          <Link to="/projects">projects</Link>
         </motion.div>
       </li>
       <li>

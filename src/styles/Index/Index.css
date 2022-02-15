@@ -1434,7 +1434,8 @@
 }
 
 .archive .archive-slider {
-  margin-top: 24px;
+  width: 100%;
+  margin-top: 32px;
   overflow: hidden;
 }
 
@@ -1444,7 +1445,7 @@
 
 .archive .archive-slider .carousel .archive-grid-item {
   width: calc(100% / 2);
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 .archive .archive-slider .carousel .archive-grid-item .grid-item-inner .item-overlay {
@@ -1462,6 +1463,7 @@
   left: 0;
   width: 100%;
   height: calc(100% - 5px);
+  border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.75);
   font-size: 14px;
   font-weight: 500;
@@ -1493,6 +1495,7 @@
 
 .archive .archive-slider .carousel .archive-grid-item .grid-item-inner img {
   width: 100%;
+  border-radius: 4px;
 }
 
 .dark-theme {

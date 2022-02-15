@@ -229,7 +229,7 @@
 
 .projects .project-content .project-type {
   width: 100%;
-  margin-top: 24px;
+  margin-top: 16px;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -298,8 +298,14 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.2px;
+}
+
+@media screen and (min-width: 760px) {
+  .projects .project-content .content-lower .lower-inner a {
+    font-weight: 600;
+  }
 }
 
 @media screen and (min-width: 1280px) {

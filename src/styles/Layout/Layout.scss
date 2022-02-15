@@ -119,6 +119,7 @@
     }
 
     .time {
+      display: none;
       position: absolute;
       margin-left: 64px;
       font-size: 16px;
@@ -128,6 +129,7 @@
       z-index: 100000;
 
       @media screen and (min-width: 760px) {
+        display: block;
         margin-left: 100px;
         font-weight: 600;
       }
@@ -253,7 +255,7 @@
     left: 0;
     width: 100%;
     background-color: var(--font-colour);
-    animation: scrollbar-anim 1.8s cubic-bezier(0.51, 0.92, 0.24, 1);
+    animation: scrollbar-anim 1.4s ease-out;
 
     @keyframes scrollbar-anim {
       0% {

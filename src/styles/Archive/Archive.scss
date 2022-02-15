@@ -134,7 +134,7 @@
       width: 100%;
 
       .archive-grid-item {
-        width: calc(100% / 2);
+        width: calc((100% / 1.5) - 16px);
         margin-right: 16px;
 
         .grid-item-inner {

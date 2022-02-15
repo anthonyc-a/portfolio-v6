@@ -1444,7 +1444,7 @@
 }
 
 .archive .archive-slider .carousel .archive-grid-item {
-  width: calc(100% / 2);
+  width: calc((100% / 1.5) - 16px);
   margin-right: 16px;
 }
 

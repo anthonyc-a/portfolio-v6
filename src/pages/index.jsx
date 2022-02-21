@@ -7,6 +7,9 @@ import Services from "../components/Sections/Services/Services"
 import "../styles/Index/Index.css"
 
 const Home = () => {
+  document.addEventListener("contextmenu", event => {
+    event.preventDefault()
+  })
   return (
     <>
       <Layout title="Anthony Animba - Freelance Web Designer and Developer in London">

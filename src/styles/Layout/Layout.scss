@@ -1,3 +1,59 @@
+.cursor {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  transform: translate3d(0, 0, 0);
+  mix-blend-mode: difference;
+  background-color: transparent;
+  overflow: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10000000;
+
+  @media (pointer: coarse) {
+    display: none;
+  }
+
+  .cursor-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--accent-colour);
+    background-color: transparent;
+    border-radius: 50%;
+
+    &.expand {
+      transform: scale(1.4);
+      border-color: #fff;
+    }
+  }
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate3d(0, 0, 0);
+  mix-blend-mode: difference;
+  background-color: #fff;
+  z-index: 10000000;
+
+  @media (pointer: coarse) {
+    display: none;
+  }
+}
+
 .header {
   position: fixed;
   display: flex;
@@ -211,7 +267,7 @@
         }
 
         .active {
-            opacity: 0.5;
+          opacity: 0.5;
           pointer-events: none;
         }
       }
@@ -350,7 +406,7 @@
       opacity: 0.5;
 
       p {
-          letter-spacing: unset;
+        letter-spacing: unset;
       }
 
       @media screen and (min-width: 760px) {

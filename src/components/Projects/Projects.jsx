@@ -27,7 +27,11 @@ const Projects = ({ next, link, description, tags }) => {
 
       <div className="project-content">
         <div className="content-upper">
-          <div className="upper-inner">
+          <div
+            className={
+              description === false ? "upper-inner" : "upper-inner row"
+            }
+          >
             <div className="project-title-contain">
               {count === 0 && <h3>archvizual.com</h3>}
               {count === 1 && <h3>Pak NFT Archive</h3>}

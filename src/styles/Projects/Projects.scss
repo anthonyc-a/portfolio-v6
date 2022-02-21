@@ -74,6 +74,18 @@
           align-items: unset;
         }
 
+        &.row {
+          @media screen and (min-width: 760px) {
+            flex-direction: row;
+            align-items: flex-start;
+
+            .nav-arrows {
+              margin-bottom: unset;
+              margin-right: 40px;
+            }
+          }
+        }
+
         .project-title-contain {
           overflow: hidden;
         }
@@ -139,13 +151,12 @@
           }
 
           .inactive {
-            opacity: 0.5;
             pointer-events: none;
 
             svg {
               g {
                 path {
-                  stroke: #8d8d8d;
+                  stroke: var(--tag-colour);
                 }
               }
             }
@@ -273,7 +284,7 @@
         }
 
         span {
-          font-size: 17px;
+          font-size: 16px;
           font-weight: 500;
           color: var(--accent-colour);
 
@@ -281,7 +292,7 @@
           }
 
           @media screen and (min-width: 1280px) {
-            font-size: 18px;
+            font-size: 17px;
           }
 
           @media screen and (min-width: 1600px) {

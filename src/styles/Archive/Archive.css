@@ -157,8 +157,6 @@
 .archive .archive-slider {
   width: 100%;
   margin-top: 32px;
-  padding: 16px 16px 11px 16px;
-  background-color: var(--secondary-colour);
   border-radius: 4px;
   overflow: hidden;
 }

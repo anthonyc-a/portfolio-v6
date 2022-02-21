@@ -1,9 +1,12 @@
 import React from "react"
+import PriceCalc from "../../PriceCalc/PriceCalc"
 import Description from "../Title/Description"
 import Title from "../Title/Title"
 import ServicesGrid from "./ServicesGrid/ServicesGrid"
 
 const Services = () => {
+  const [calcOpen, setCalcOpen] = React.useState(false)
+
   return (
     <section>
       <div className="title-contain">
@@ -14,9 +17,15 @@ const Services = () => {
         <div className="services-inner">
           <ServicesGrid />
           <div className="services-aside">
-            <a href="/" className="pricing-btn">
+            <div
+              className="pricing-btn"
+              onClick={() => {
+                setCalcOpen(true)
+              }}
+            >
               price calculator
-            </a>
+            </div>
+            <PriceCalc calcOpen={calcOpen} setCalcOpen={setCalcOpen} />
           </div>
         </div>
       </div>

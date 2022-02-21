@@ -1,7 +1,7 @@
-@import "../Layout/Layout.scss";
-@import "../Sections/Sections.scss";
-@import "../Projects/Projects.scss";
-@import "../Archive/Archive.scss";
+@import "../Layout/Layout.css";
+@import "../Sections/Sections.css";
+@import "../Projects/Projects.css";
+@import "../Archive/Archive.css";
 
 $black: #000;
 $obsidian: #151515;
@@ -18,7 +18,7 @@ $offwhite: #e3e1e0;
   --secondary-colour: #{$charcoal};
   --font-colour: #{$white};
   --accent-colour: #{$grey};
-  --theme-switch-colour: #605DD1;
+  --theme-switch-colour: #605dd1;
   --tag-colour: #{$ok};
   --line-colour: #{$darkgrey};
 
@@ -51,6 +51,7 @@ $offwhite: #e3e1e0;
   padding: 0;
   scrollbar-width: none;
   outline: none;
+  cursor: none !important;
 }
 
 ::-webkit-scrollbar {

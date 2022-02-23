@@ -98,7 +98,11 @@ section {
   margin-top: 104px;
 
   &:nth-child(1) {
-    margin-top: 56px;
+    margin-top: 0px;
+
+    @media screen and (min-width: 760px) {
+      margin-top: 56px;
+    }
   }
 
   @media screen and (min-width: 760px) {

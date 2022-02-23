@@ -215,7 +215,13 @@
 
 .projects .project-content .content-upper .upper-inner .nav-arrows .arrow svg g path {
   stroke: var(--font-colour);
-  stroke-width: 1.4px;
+  stroke-width: 2px;
+}
+
+@media screen and (min-width: 760px) {
+  .projects .project-content .content-upper .upper-inner .nav-arrows .arrow svg g path {
+    stroke-width: 1.4px;
+  }
 }
 
 .projects .project-content .content-upper .upper-inner .nav-arrows .inactive {
@@ -229,7 +235,7 @@
 .projects .project-content .project-type {
   width: 100%;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -239,6 +245,7 @@
 @media screen and (min-width: 760px) {
   .projects .project-content .project-type {
     margin-top: 24px;
+    font-size: 15px;
   }
 }
 
@@ -399,14 +406,25 @@
 }
 
 .projects .project-content .content-lower .lower-inner span .load-icon {
-  width: 13px;
-  height: 13px;
+  width: 11px;
+  height: 11px;
   margin-left: 8px;
-  border: 2px solid var(--accent-colour);
+  margin-top: 2px;
+  border: 1px solid var(--accent-colour);
   border-radius: 100%;
-  border-top: 2px solid var(--primary-colour);
+  border-top: 1px solid var(--primary-colour);
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
+}
+
+@media screen and (min-width: 1280px) {
+  .projects .project-content .content-lower .lower-inner span .load-icon {
+    width: 13px;
+    height: 13px;
+    margin-top: unset;
+    border: 2px solid var(--accent-colour);
+    border-top: 2px solid var(--primary-colour);
+  }
 }
 
 @-webkit-keyframes spin {

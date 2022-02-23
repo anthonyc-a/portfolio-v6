@@ -142,7 +142,7 @@
   display: block;
   margin-top: 6px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.4px;
   color: #8d8d8d;
   -webkit-transform: translateY(100%);
@@ -161,6 +161,7 @@
 @media screen and (min-width: 1280px) {
   .title-contain .description span {
     font-size: 16px;
+    font-weight: 500;
   }
 }
 
@@ -454,7 +455,7 @@
 }
 
 .services .services-inner .services-grid .services-item .services-txt {
-  padding-top: 16px;
+  padding-top: 14px;
 }
 
 @media screen and (min-width: 760px) {

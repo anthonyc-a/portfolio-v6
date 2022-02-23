@@ -9,7 +9,6 @@ const Projects = () => {
     <>
       <Layout title="Projects | Anthony Animba - Freelance Web Designer and Developer in London">
         <AllProjects />
-        <Scrollbar />
       </Layout>
     </>
   )

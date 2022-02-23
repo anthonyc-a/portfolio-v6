@@ -10,8 +10,6 @@ const Layout = ({ children, title }) => {
 
   return (
     <>
-      <Cursor />
-      <CursorDot />
       <SEO title={title} />
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <main>{children}</main>

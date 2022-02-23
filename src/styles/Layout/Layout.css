@@ -88,7 +88,33 @@
   height: 88px;
   padding: 0 16px;
   background-color: var(--primary-colour);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-animation: header-anim 0.8s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+          animation: header-anim 0.8s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
   z-index: 100000;
+}
+
+@-webkit-keyframes header-anim {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes header-anim {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -245,7 +271,7 @@
 .header .header-inner .time {
   position: absolute;
   margin-left: 64px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -254,7 +280,8 @@
 
 @media screen and (min-width: 760px) {
   .header .header-inner .time {
-    margin-left: 100px;
+    margin-left: 104px;
+    font-size: 16px;
     font-weight: 600;
   }
 }
@@ -350,6 +377,10 @@
   color: var(--font-colour);
 }
 
+.header .header-inner .nav li a:hover {
+  opacity: 0.5;
+}
+
 .header .header-inner .nav li .active {
   opacity: 0.5;
   pointer-events: none;
@@ -362,7 +393,7 @@
   right: 40px;
   width: 1px;
   height: 104px;
-  background-color: var(--tag-colour);
+  background-color: var(--accent-colour);
 }
 
 @media screen and (min-width: 760px) {
@@ -392,8 +423,8 @@
   left: 0;
   width: 100%;
   background-color: var(--font-colour);
-  -webkit-animation: scrollbar-anim 1.2s ease-out;
-          animation: scrollbar-anim 1.2s ease-out;
+  -webkit-animation: scrollbar-anim 1.6s ease-out;
+          animation: scrollbar-anim 1.6s ease-out;
 }
 
 @-webkit-keyframes scrollbar-anim {
@@ -479,7 +510,7 @@
 
 @media screen and (min-width: 1280px) {
   .footer .footer-inner {
-    margin-left: 120px;
+    margin-left: 104px;
   }
 }
 

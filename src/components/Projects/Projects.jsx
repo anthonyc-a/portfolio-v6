@@ -88,7 +88,11 @@ const Projects = ({ next, link, description, tags }) => {
                 Launch site <LinkArrow />
               </a>
             )}
-            {count === 1 && <span>In development</span>}
+            {count === 1 && (
+              <span>
+                In development <div className="load-icon"></div>
+              </span>
+            )}
             {count === 2 && (
               <a href="/">
                 Launch site <LinkArrow />

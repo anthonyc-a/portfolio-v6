@@ -64,7 +64,19 @@
   height: 88px;
   padding: 0 16px;
   background-color: var(--primary-colour);
+  transform: translateY(-100%);
+  animation: header-anim 0.8s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
   z-index: 100000;
+
+  @keyframes header-anim {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 
   @media screen and (min-width: 640px) {
     height: 104px;
@@ -184,14 +196,15 @@
     .time {
       position: absolute;
       margin-left: 64px;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.8px;
       z-index: 100000;
 
       @media screen and (min-width: 760px) {
-        margin-left: 100px;
+        margin-left: 104px;
+        font-size: 16px;
         font-weight: 600;
       }
 
@@ -264,6 +277,10 @@
         a {
           position: relative;
           color: var(--font-colour);
+
+          &:hover {
+            opacity: 0.5;
+          }
         }
 
         .active {
@@ -282,7 +299,7 @@
   right: 40px;
   width: 1px;
   height: 104px;
-  background-color: var(--tag-colour);
+  background-color: var(--accent-colour);
 
   @media screen and (min-width: 760px) {
     display: block;
@@ -305,7 +322,7 @@
     left: 0;
     width: 100%;
     background-color: var(--font-colour);
-    animation: scrollbar-anim 1.2s ease-out;
+    animation: scrollbar-anim 1.6s ease-out;
 
     @keyframes scrollbar-anim {
       0% {
@@ -358,7 +375,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      margin-left: 120px;
+      margin-left: 104px;
     }
 
     .footer-socials {

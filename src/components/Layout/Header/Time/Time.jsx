@@ -8,7 +8,7 @@ const Time = props => {
     setInterval(() => {
       const time = moment.tz("Europe/London").format("HH:mm")
       setTimeState(time)
-    }, [1000])
+    }, [10])
   }, [])
 
   return (

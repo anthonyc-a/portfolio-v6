@@ -10,11 +10,14 @@
     position: absolute;
     top: -80px;
     right: 0;
+    font-weight: 600;
+    letter-spacing: 0;
   }
 
   .archive-img-contain {
     width: calc(100% + 32px);
     transform: translateX(-16px);
+    animation: appear 0.8s ease-out;
 
     @media screen and (min-width: 760px) {
       transform: translateX(-40px);

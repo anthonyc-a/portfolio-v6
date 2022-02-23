@@ -15,12 +15,16 @@
   position: absolute;
   top: -80px;
   right: 0;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .archive .archive-img-contain {
   width: calc(100% + 32px);
   -webkit-transform: translateX(-16px);
           transform: translateX(-16px);
+  -webkit-animation: appear 0.8s ease-out;
+          animation: appear 0.8s ease-out;
 }
 
 @media screen and (min-width: 760px) {

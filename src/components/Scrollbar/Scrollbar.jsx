@@ -2,25 +2,27 @@ import React from "react"
 
 const Scrollbar = () => {
   const [scrollTop, setScrollTop] = React.useState(0)
-
-  var doc = document.documentElement
-  var w = window
-
-  var prevScroll = w.scrollY || doc.scrollTop
-  var curScroll
   const [direction, setDirection] = React.useState(0)
 
-  var checkScroll = () => {
-    curScroll = w.scrollY || doc.scrollTop
-    if (curScroll > prevScroll) {
-      setDirection(2)
-    } else if (curScroll < prevScroll) {
-      setDirection(1)
-    }
-    prevScroll = curScroll
-  }
+  React.useEffect(() => {
+    var doc = document.documentElement
+    var w = window
 
-  window.addEventListener("scroll", checkScroll)
+    var prevScroll = w.scrollY || doc.scrollTop
+    var curScroll
+
+    var checkScroll = () => {
+      curScroll = w.scrollY || doc.scrollTop
+      if (curScroll > prevScroll) {
+        setDirection(2)
+      } else if (curScroll < prevScroll) {
+        setDirection(1)
+      }
+      prevScroll = curScroll
+    }
+
+    window.addEventListener("scroll", checkScroll)
+  }, [])
 
   const onScroll = () => {
     const winScroll = document.documentElement.scrollTop

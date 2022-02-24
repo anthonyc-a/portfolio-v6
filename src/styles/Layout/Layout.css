@@ -95,9 +95,11 @@
   z-index: 100000;
 }
 
-.header.hide {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+@media screen and (min-width: 640px) {
+  .header.hide {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
 }
 
 @-webkit-keyframes header-anim {

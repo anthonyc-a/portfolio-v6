@@ -68,7 +68,9 @@
   z-index: 100000;
 
   &.hide {
-    transform: translateY(-100%);
+    @media screen and (min-width: 640px) {
+      transform: translateY(-100%);
+    }
   }
 
   @keyframes header-anim {

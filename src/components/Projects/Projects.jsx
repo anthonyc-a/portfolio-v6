@@ -23,6 +23,20 @@ const Projects = ({ next, link, description, tags }) => {
           <img src={img2} alt="" />
           <img src={img3} alt="" />
         </div>
+        <div className="project-nav">
+          <div
+            className="project-nav-control"
+            onClick={() => {
+              count <= 0 ? setCount(count) : setCount(count - 1)
+            }}
+          ></div>
+          <div
+            className="project-nav-control"
+            onClick={() => {
+              count >= 2 ? setCount(count) : setCount(count + 1)
+            }}
+          ></div>
+        </div>
       </div>
 
       <div className="project-content">
@@ -33,9 +47,9 @@ const Projects = ({ next, link, description, tags }) => {
             }
           >
             <div className="project-title-contain">
-              {count === 0 && <h3>archvizual.com</h3>}
+              {count === 0 && <h3>Archvizual.com</h3>}
               {count === 1 && <h3>Pak NFT Archive</h3>}
-              {count === 2 && <h3>carhartt clone</h3>}
+              {count === 2 && <h3>Carhartt Clone</h3>}
             </div>
             <NavArrows
               count={count}

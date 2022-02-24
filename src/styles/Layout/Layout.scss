@@ -64,9 +64,12 @@
   height: 88px;
   padding: 0 16px;
   background-color: var(--primary-colour);
-  transform: translateY(-100%);
-  animation: header-anim 0.8s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+  transition: transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
   z-index: 100000;
+
+  &.hide {
+    transform: translateY(-100%);
+  }
 
   @keyframes header-anim {
     0% {
@@ -300,6 +303,11 @@
   width: 1px;
   height: 104px;
   background-color: var(--accent-colour);
+  transition: transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+
+  &.raise {
+    transform: translateY(-80px);
+  }
 
   @media screen and (min-width: 760px) {
     display: block;

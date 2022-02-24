@@ -124,7 +124,7 @@
       }
 
       @media screen and (min-width: 1280px) {
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 500;
       }
 
@@ -346,8 +346,12 @@
           margin-bottom: 16px;
           overflow: hidden;
 
+          img {
+            opacity: 0.5;
+          }
+
           @media screen and (min-width: 760px) {
-            margin-bottom: 18px;
+            margin-bottom: 16px;
           }
         }
 
@@ -361,7 +365,7 @@
           padding-top: 14px;
 
           @media screen and (min-width: 760px) {
-            padding-top: 18px;
+            padding-top: 16px;
           }
         }
       }
@@ -387,8 +391,14 @@
         letter-spacing: 0.4px;
         text-transform: uppercase;
         text-align: center;
-        background-color: var(--font-colour);
-        color: var(--primary-colour);
+        border: 1px solid var(--accent-colour);
+        color: var(--font-colour);
+
+        &:hover {
+          background-color: var(--font-colour);
+          color: var(--primary-colour);
+          border-color: var(--font-colour);
+        }
 
         @media screen and (min-width: 760px) {
           top: calc(100vh - 120px);

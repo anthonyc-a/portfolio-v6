@@ -88,11 +88,16 @@
   height: 88px;
   padding: 0 16px;
   background-color: var(--primary-colour);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1), -webkit-transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  z-index: 100000;
+}
+
+.header.hide {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-animation: header-anim 0.8s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
-          animation: header-anim 0.8s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
-  z-index: 100000;
 }
 
 @-webkit-keyframes header-anim {
@@ -394,6 +399,15 @@
   width: 1px;
   height: 104px;
   background-color: var(--accent-colour);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1), -webkit-transform 0.4s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+
+.scrollbar.raise {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
 }
 
 @media screen and (min-width: 760px) {

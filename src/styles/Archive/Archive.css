@@ -23,8 +23,8 @@
   width: calc(100% + 32px);
   -webkit-transform: translateX(-16px);
           transform: translateX(-16px);
-  -webkit-animation: appear 0.8s ease-out;
-          animation: appear 0.8s ease-out;
+  -webkit-animation: appear 0.6s ease-out;
+          animation: appear 0.6s ease-out;
 }
 
 @media screen and (min-width: 760px) {
@@ -52,7 +52,7 @@
 .archive .archive-img-contain .archive-img-inner {
   position: -webkit-sticky;
   position: sticky;
-  top: 28%;
+  top: 26%;
   width: 100%;
 }
 
